@@ -14,6 +14,6 @@ public:
             }
             ump[rem]++;
         }
-        return cnt++;
+        return cnt;
     }
 };
