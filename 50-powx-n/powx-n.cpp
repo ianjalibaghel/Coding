@@ -13,6 +13,6 @@ public:
        if(n<0){ x= 1/x;
        N=-1*N;
        }
-      return helper(x,abs(N));
+      return helper(x,(N));
     }
 };
