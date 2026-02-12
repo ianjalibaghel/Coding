@@ -4,16 +4,14 @@ public:
         unordered_map<char, int> mp;
         int sz = s.size(), ans = 0;
         
-        // Try all possible substrings
         for(int i = 0; i < sz; i++) {
-            mp = {};  // Reset map for each starting position
+            mp = {};  
             
             for(int j = i; j < sz; j++) {
                 mp[s[j]]++;
                 
-                // Check if current substring is balanced
                 bool flag = true;
-                int cnt = mp[s[j]];  // Get frequency of current character
+                int cnt = mp[s[j]];  
                 
                 for(auto x : mp) {
                     if(x.second != cnt) {
