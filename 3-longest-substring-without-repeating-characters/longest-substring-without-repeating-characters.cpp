@@ -13,9 +13,8 @@ public:
                 ans = max(ans,j-i+1);
                  j++;
             }else{
+                st.erase(s[i]);
                 i++;
-                j=i;
-                st.clear();
             }
         }
         return ans;
